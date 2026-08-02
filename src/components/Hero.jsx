@@ -1,43 +1,46 @@
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from 'react'
 
 function Hero() {
-  const [jumping, setJumping] = useState(false);
+  const [jumping, setJumping] = useState(false)
+
+  function triggerJump() {
+    setJumping(true)
+    setTimeout(() => setJumping(false), 500)
+  }
 
   useEffect(() => {
     function handleKeyDown(e) {
-      if (e.code === "Space") {
+      if (e.code === 'Space') {
         e.preventDefault()
-        setJumping(true);
-        setTimeout(() => setJumping(false), 500);
+        triggerJump()
       }
     }
 
-    window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener('keydown', handleKeyDown)
 
     return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, []);
+      window.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [])
 
   return (
     <section className="hero">
       <div className="container hero__inner">
         <h1>Hello world</h1>
         <img
-          className={`hero__avatar ${jumping ? "hero__avatar--jump" : ""}`}
+          className={`hero__avatar ${jumping ? 'hero__avatar--jump' : ''}`}
           src="/miopg.png"
           alt="Mel"
+          onClick={triggerJump}
         />
+        <div className="hero__ground"></div>
         <p className="hero__subtitle">
           I'm looking for a good opportunity to grow.
         </p>
-        <a href="#projects" className="button">
-          Have a look at my projects
-        </a>
+        <a href="#projects" className="button">Have a look at my projects</a>
       </div>
     </section>
-  );
+  )
 }
 
-export default Hero;
+export default Hero
