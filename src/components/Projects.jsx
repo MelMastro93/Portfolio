@@ -7,16 +7,16 @@ const PROJECTS = [
     link: "https://github.com/MelMastro93/project2-LEGO",
   },
   {
-    title: "Project two",
-    description: "Coming soon.",
-    tags: ["..."],
-    link: "#",
+    title: "PixelPlayground",
+    description: "A team e-commerce project built with React, HTML, CSS, and the Fetch API. I worked on the payments page and created the product imagery, generating visuals with AI and refining them in Photoshop.",
+    tags: ["'React', 'JavaScript', 'Photoshop'"],
+    link: "https://github.com/ValentinaLi00/PixelPlayground",
   },
   {
-    title: "Project three",
-    description: "Coming soon.",
-    tags: ["..."],
-    link: "#",
+    title: "Weather App",
+    description: "A weather app built with React, fetching real-time data from the Open-Meteo API. Search any city to see current conditions and a 6-day forecast, with a background that shifts color based on the temperature.",
+    tags: ["React, JavaScript, REST API"],
+    link: "https://weather-app-virid-tau-bgmoalbu1v.vercel.app/",
   },
 ];
 
@@ -24,7 +24,7 @@ function Projects() {
   return (
     <section id="projects" className="section section--alt">
       <div className="container">
-        <h2>Projects</h2>
+        <h2>PixelPlayground</h2>
         <div className="projects-grid">
           {PROJECTS.map((project) => (
             <article key={project.title} className="card">

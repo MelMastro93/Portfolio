@@ -8,9 +8,9 @@
 - [x] Form contatti collegato a Formspree (funzionante davvero, non solo console.log)
 - [x] Sito pubblicato online su Vercel, collegato a GitHub (push = ripubblica automatico)
 - [ ] Eventualmente ostacoli e punteggio, se si vuole trasformare in un vero mini gioco
-- [x ] Dark mode con bottone: toggle che cambia le variabili CSS (già pronte in index.css) tra tema chiaro e scuro
+- [x] Dark mode con bottone: toggle che cambia le variabili CSS (già pronte in index.css) tra tema chiaro e scuro
 - [x] Primo progetto vero in Projects (LEGO Landing Page)
-- [ ] Sostituire le altre due card placeholder ("Project two", "Project three") con progetti veri
+- [x] Sostituire le altre due card placeholder ("Project two", "Project three") con progetti veri
 - [ ] Eventualmente cambiare il nome del sito quando sarà più completo (ora "Melissa's Portfolio")
 
 ## Prossimo grande progetto
