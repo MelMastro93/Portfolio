@@ -87,7 +87,7 @@ function Hero() {
           {gameOver && (
             <div className="hero__gameover">
               Game Over!
-              <button onClick={() => setGameOver(false)}>Riprova</button>
+              <button onClick={() => setGameOver(false)}>Again</button>
               <button className="hero__exit" onClick={exitGame} aria-label="Exit">
       ✕
     </button>
